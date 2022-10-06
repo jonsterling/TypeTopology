@@ -112,8 +112,8 @@ pr₂ (precomp-η-equiv B-modal) =
  → (f : ○ A → B)
  → ○-rec-ext A B B-modal f f refl ＝ refl
 ○-rec-ext-beta A B B-modal f =
-   (H f ⁻¹ ∙ H f) ＝⟨ (sym-is-inverse (H f)) ⁻¹ ⟩
-   refl ∎
+ (H f ⁻¹ ∙ H f) ＝⟨ sym-is-inverse (H f) ⁻¹ ⟩
+ refl ∎
 
  where
   H : inverse (precomp-η A B) (precomp-η-is-equiv B-modal) ∘ precomp-η A B ∼ id
