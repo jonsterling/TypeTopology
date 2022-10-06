@@ -2,6 +2,13 @@ Jon Sterling, started 27th Sep 2022
 
 Much of this file is based on the proofs from Egbert Rijke's PhD thesis.
 
+One of the goals of this development is to apply equally well to
+reflective subuniverses in 1-topoi as in ∞-topoi. Consequently
+we often assume repleteness (closure of the reflective subuniverse
+under equivalence of types), which is a 1-categorically realistic
+assumption that avoids many uses of univalence in the development
+of the theory.
+
 \begin{code}
 
 {-# OPTIONS --without-K --exact-split --safe --auto-inline #-}
