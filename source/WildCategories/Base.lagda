@@ -17,10 +17,10 @@ record WildCategory 𝓤 𝓥 : (𝓤 ⊔ 𝓥)⁺ ̇ where
   assoc
    : {u v w x : ob} (f : hom u v) (g : hom v w) (h : hom w x)
    → h << (g << f) ＝ (h << g) << f
-  lunit
+  runit
    : {x y : ob} (f : hom x y)
    → f << idn x ＝ f
-  runit
+  lunit
    : {x y : ob} (f : hom x y)
    → idn y << f ＝ f
 

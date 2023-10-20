@@ -79,7 +79,7 @@ module _ {𝓤 𝓥} (C : WildCategory 𝓤 𝓥) where
   pr₂ (apex-is-initial coh x) f =
    P.cone x ＝⟨ P.nat f ⁻¹ ⟩
    f << P.gen ＝⟨ ap (f <<_) coh ⟩
-   f << idn P.apex ＝⟨ lunit f ⟩
+   f << idn P.apex ＝⟨ runit f ⟩
    f ∎
 
  module _ (P : IncohIdnCone) where
@@ -114,7 +114,7 @@ module _ {𝓤 𝓥} (C : WildCategory 𝓤 𝓥) where
       (gen-split.ret << gen-split.sec) << gen-split.ret
        ＝⟨ ap (_<< gen-split.ret) gen-split.sec-is-section ⟩
       idn _ << gen-split.ret
-       ＝⟨ runit gen-split.ret ⟩
+       ＝⟨ lunit gen-split.ret ⟩
       gen-split.ret ∎
 
    initiality : has-initial-object C
